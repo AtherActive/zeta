@@ -1,0 +1,33 @@
+<head>
+    {% include './modules/includes.njk' %}
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+<img src="/img/banner-home.jpg" alt="" class="banner-fixed" id="introbanner">
+<div class="container flex align center util-pd-0">
+    <div class="row align center util-hg-100vh util-pd-0 util-mg-0">
+        <div class="col i50 xs100 s100 m75 util-bg" id='content'>
+            <div class="center-all column" id='content-anim'>
+                <h1 class='gradient'>Login to ZetaBit</h1>
+                <form action="/auth/login" method='POST'>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="username" name="username" id="username" placeholder='zeta@zetabit.nl' required>
+                    </div>
+
+                    <div>
+                        <p id='pwdwarning' class='warning'></p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder='Super Secret Password' required>
+                    </div>
+
+                    <div>
+                        <a href="/auth/register">Don't have an account? Make one here!</a>
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

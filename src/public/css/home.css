@@ -1,0 +1,15 @@
+#introduction .site-title {
+  background: linear-gradient(0.25turn, #21aa05, #04fafa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.3); }
+
+#introduction .intro-text {
+  margin-top: 1rem; }
+
+#introbanner {
+  filter: brightness(0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover; }

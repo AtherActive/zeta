@@ -1,0 +1,56 @@
+<head>
+    {% include './modules/includes.njk' %}
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<img src="/img/banner-home.jpg" alt="" class="banner-fixed" id="introbanner">
+<div class="container flex align center util-pd-0">
+    <div class="row align center util-hg-100vh util-pd-0 util-mg-0">
+        <div class="col i50 xs100 s100 m75 util-bg" id='content'>
+            <div class="center-all column" id='content-anim'>
+                <h1 class='gradient'>Sign Up to ZetaBit</h1>
+                <form action="/auth/register" class='util-mg-0' method='POST'>
+
+                    <div><h5 class='gradient util-txt-center'>The basics</h5></div>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="username" name="username" id="username" placeholder='supercoolzetauser01' required>
+                    </div>
+
+                    <div><h5 class='gradient util-txt-center'>Some information</h5></div>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder='Rick' required>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder='Astley' required>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail Address</label>
+                        <input type="email" name="email" id="email" placeholder='zeta@zetabit.nl' required>
+                    </div>
+
+                    <div><h5 class='gradient util-txt-center'>Security</h5></div>
+                    <div>
+                        <p id='pwdwarning' class='warning'></p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder='Super Secret Password' required>
+                    </div>
+
+                    <div>
+                        <p id='pwdwarningv' class='warning'></p>
+                        <label for="passwordv">Verify Password</label>
+                        <input type="password" name="passwordv" id="passwordv" placeholder='Super Secret Password' required>
+                    </div>
+
+                    <div>
+                        <a href="/auth/login">Already registered? Log in here!</a>
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,9 @@
+{%if user != undefined%}
+    {%include './navbar.njk'%}
+    <img src="/img/banner-home.jpg" alt="" class="banner-fixed" id="introbanner">
+    <p>{{user.username}}</p>
+    <div class="row align center">
+    <div class="col i50 xs100 s100 m75" id='postcontainer'>
+    </div>
+<script src="/js/home.js"></script>
+{%endif%}

@@ -1,0 +1,20 @@
+@import './scss/utils/vars.scss';
+#introduction {
+    .site-title {
+        background: linear-gradient(.25turn, $theme_color, rgb(4, 250, 250));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.3);
+    }
+    .intro-text {
+        margin-top: 1rem;
+    }
+}
+
+#introbanner {
+    filter: brightness(0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+}

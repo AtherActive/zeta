@@ -1,0 +1,12 @@
+<head>
+    {% include './modules/includes.njk' %}
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    {% if user == undefined %}
+        {% include './modules/home_signed_out.njk' %}
+    {%else%}
+         {% include './modules/home_signed_in.njk' %}
+    {%endif%}
+</body>
